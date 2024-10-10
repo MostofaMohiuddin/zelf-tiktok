@@ -74,12 +74,12 @@ class TikTokApi:
                 "User-Agent": device_info.get("user_agent"),
                 "Cookie": cookie_header,
                 "tt-csrf-token": "CaNyFQKY-6sa8O30_ieYFrXAZh89vdPoKGZY",
-                "tt-ticket-guard-client-data": "eyJ0c19zaWduIjoidHMuMS40M2FmOTU1OGU4YjMxMGFjYjc4Y2JjYTM3Y2RkMGE4YWU3ODI2ZjE3MGM1ZmYyZWU0NDY4YzYwZTkyODAxNGQ4MGU3MGI0YmRhODJjMTM4MzZlNWNmYTE4Mzk0ZDcwMjQwZjhhZjE2MzFmMTY1YWU5NjAxMjJlZWZmZDQ1MzNkZCIsInJlcV9jb250ZW50IjoidGlja2V0LHBhdGgsdGltZXN0YW1wIiwicmVxX3NpZ24iOiJNRVFDSUMxaC9jaDEwVFp4Vk85QVFuRnVQZTJlM1ZMVEJvSXhHVE13RmR6VTVsckRBaUFkNDZkUldZejFWbm5Hd2pBVWFSaGp4V3dQb3V4NUpNV1FHVnJ2UDdMVEdBPT0iLCJ0aW1lc3RhbXAiOjE3MjgxMTM2MjN9",
+                "tt-ticket-guard-client-data": "eyJ0c19zaWduIjoidHMuMS40M2FmOTU1OGU4YjMxMGFjYjc4Y2JjYTM3Y2RkMGE4YWU3ODI2ZjE3MGM1ZmYyZWU0NDY4YzYwZTkyODAxNGQ4MGU3MGI0YmRhODJjMTM4MzZlNWNmYTE4Mzk0ZDcwMjQwZjhhZjE2MzFmMTY1YWU5NjAxMjJlZWZmZDQ1MzNkZCIsInJlcV9jb250ZW50IjoidGlja2V0LHBhdGgsdGltZXN0YW1wIiwicmVxX3NpZ24iOiJNRVVDSVFENkNmWGVZUnpoK2NlWjY1VldFY1pjK3duWUFvL0RwdWZZaXcxOTV0OGtQUUlnYmRCczlVejdycEtrVFJGMHFwSG93SnNUMFJFWnUyYUtEakpuQkFMOERHcz0iLCJ0aW1lc3RhbXAiOjE3Mjg1NTIyODV9",
                 "tt-ticket-guard-iteration-version": "0",
                 "tt-ticket-guard-public-key": "BGu7I/olJcxXM5cUUXfEa/VqZ/T1E1BOXDNz77ZqflZHWs70ocSgWP6OCyQabEG15QOm6aoE2K1ickIBPCKy8Ys=",
                 "tt-ticket-guard-version": "2",
                 "tt-ticket-guard-web-version": "1",
-                "x-secsdk-csrf-token": "000100000001d613aa36787ca4371478f961d129b5bdb910cb8951cd91959ccf339e2cf7f52f17fb7e2f64d4f3c7",
+                "x-secsdk-csrf-token": "000100000001d3994b3a079606534188f634d6b2b7c06ae93ece3f8a887ad69d3b44643b6b8917fd0d24172aff50",
             },
         )
         return cls(tiktok_signature_generator, httpx_client, authenticated_httpx_client)

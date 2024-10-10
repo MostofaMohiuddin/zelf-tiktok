@@ -34,6 +34,7 @@ class Interact:
         return False
 
     async def verify_comment(self, url: str, user_id: str, text: str):
+        await asyncio.sleep(5)  # Wait for the comment to be posted
         count = 0
         parsed_url = urlparse(url)
         video_id = parsed_url.path.split("/")[-1]
@@ -54,14 +55,14 @@ class Interact:
 async def run():
     interact = await Interact.initialize()
     await interact.like_video(
-        "https://www.tiktok.com/@travelcloser/video/7223073356822695194?q=places%20that%20don%27t%20feel%20real&t=1728106921211"
+        "https://www.tiktok.com/@banglavision/video/7418587332263120146"
     )
     await interact.comment_video(
-        "https://www.tiktok.com/@travelcloser/video/7223073356822695194?q=places%20that%20don%27t%20feel%20real&t=1728106921211",
+        "https://www.tiktok.com/@banglavision/video/7418587332263120146",
         COMMENT_TEXT,
     )
     await interact.verify_comment(
-        "https://www.tiktok.com/@travelcloser/video/7223073356822695194?q=places%20that%20don%27t%20feel%20real&t=1728106921211",
+        "https://www.tiktok.com/@banglavision/video/7418587332263120146",
         USER_UNIQUE_ID,
         COMMENT_TEXT,
     )
